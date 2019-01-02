@@ -2,8 +2,8 @@
   width: 100%;
   position: fixed;
   top: 0px;
-  box-shadow: 0 4px 2px -2px grey;
-  background-color: whitesmoke;
+  box-shadow: 0 4px 2px -3px grey;
+  background-color: white;
   z-index: 2;
 }
 
@@ -38,10 +38,6 @@
     margin-top: 30px;
     padding-bottom: 16px;
 }
-
-/*.dropbtn:hover .dropdown-content {
-    display: block;
-}*/
 
 .open {display: block; }
 .closed {display: none; }
@@ -100,6 +96,30 @@ body {
   background-color: whitesmoke;
   margin: 0;
   padding: 0;
+}
+
+
+.cards-anim {
+    position: relative;
+    animation-name: cards;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cards {
+    0% {right: -1000px}
+    100% {right: 0px}
+
+}
+
+@-moz-keyframes cards {
+    0% {right: -1000px}
+    100% {right: 0px}
+}
+
+@keyframes cards {
+    0% {right: -1000px}
+    100% {right: 0px}
 }
 
 

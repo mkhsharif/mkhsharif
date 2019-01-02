@@ -1,32 +1,33 @@
-
-var dropdown =  document.getElementById('menu');
-
-
-document.getElementById('selector').addEventListener('mouseover', openDropDown);
-document.getElementById('selector').addEventListener('mouseout', closeDropDown);
+document.getElementById('selector').addEventListener('mouseover', open.bind(null, 'menu'));
+document.getElementById('selector').addEventListener('mouseout', close.bind(null, 'menu'));
 document.getElementById('select1').addEventListener('click', updateDropDown);
 document.getElementById('select2').addEventListener('click', updateDropDown);
 
-
-function openDropDown() {
-    if(dropdown.classList.contains('closed')) {
-        dropdown.classList.remove('closed');
-        dropdown.classList.add('open');
+function open(id) {
+    var element = document.getElementById(id);
+    if(element.classList.contains('closed')) {
+        element.classList.remove('closed');
+        element.classList.add('open');
     }
 }
 
-function closeDropDown() {
-    if(dropdown.classList.contains('open')) {
-        dropdown.classList.remove('open');
-        dropdown.classList.add('closed');
+function close(id) {
+    var element = document.getElementById(id);
+    if(element.classList.contains('open')) {
+        element.classList.remove('open');
+        element.classList.add('closed');
     }
 }
-
 
 function updateDropDown() {
     var top = document.getElementById('top').textContent;
     var selected = this.textContent;
     document.getElementById('top').textContent = selected;
     this.textContent = top;   
-    closeDropDown();
+    close('menu');
+    close(top.toLowerCase());
+    open(selected.toLowerCase());
 }
+
+
+
