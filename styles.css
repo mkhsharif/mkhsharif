@@ -18,6 +18,14 @@
     top: 40%;
 }
 
+.favicon {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    margin-left: 1.5%; 
+    padding: 0;
+}
+
 #footer {
     width: 100%;
     position: fixed;
@@ -26,15 +34,6 @@
     background-color: white;
     z-index: 2;
   }
-
-
-
-.navbar {
-  width: 100%;
-  font-family: "Quicksand", sans-serif;
-  margin: 0;
-}
-
 
 .about-container {
     position: fixed;
@@ -55,13 +54,13 @@
 
 .typewriter {
     overflow: hidden;
-    border-right: .15em solid orangered;
+    border-right: .15em solid crimson;
     white-space: nowrap;
     margin: 0 auto;
     float: left;
     letter-spacing: .15em;
     animation: typing 3.5s steps(30, end),
-     blink-caret .75s step-end infinite;
+     blink-caret .75s step-end 5;
 }
 
 @keyframes typing {
@@ -71,7 +70,7 @@
 
 @keyframes blink-caret {
     from, to {border-color: transparent}
-    50%{border-color: orangered}
+    50%{border-color: crimson}
 }
 
 .card-container {
@@ -126,13 +125,6 @@
 
 .dropdown-content p:hover {
     background-color: #e6e6e6;
-}
-
-.favicon {
-    height: 60px;
-    width: 60px;
-    margin-left: 1.5%; 
-    padding: 0;
 }
 
 p {
