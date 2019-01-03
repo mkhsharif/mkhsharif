@@ -26,7 +26,7 @@ function updateDropDown() {
     this.textContent = top;   
     close('menu');
     close(top.toLowerCase());
-    open(selected.toLowerCase());
+    open(selected.toLowerCase())
 }
 
 

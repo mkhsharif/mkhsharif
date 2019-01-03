@@ -1,4 +1,4 @@
-.header {
+#header {
   width: 100%;
   position: fixed;
   top: 0px;
@@ -7,10 +7,71 @@
   z-index: 2;
 }
 
+#header .name {
+    position: absolute;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    left: 50%;
+    margin-left: -85px;
+    top: 40%;
+}
+
+#footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    box-shadow: 0 4px 2px -3px grey;
+    background-color: white;
+    z-index: 2;
+  }
+
+
+
 .navbar {
   width: 100%;
   font-family: "Quicksand", sans-serif;
   margin: 0;
+}
+
+
+.about-container {
+    position: fixed;
+    float: left;
+    margin-top: 200px;
+    margin-left: 5%
+}
+
+.about-name {
+    font-family: Quicksand;
+}
+
+.about {
+    font-family: NTR;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid orangered;
+    white-space: nowrap;
+    margin: 0 auto;
+    float: left;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(30, end),
+     blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50%{border-color: orangered}
 }
 
 .card-container {
@@ -37,6 +98,7 @@
     margin-right: 10%;
     margin-top: 30px;
     padding-bottom: 16px;
+    font-family: "Quicksand", sans-serif;
 }
 
 .open {display: block; }
