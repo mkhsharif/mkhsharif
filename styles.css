@@ -6,7 +6,7 @@ body {
   background: whitesmoke;
 }
 
-#container {
+#main-container {
   min-height: 100%;
   position: relative;
   overflow: hidden;
@@ -72,6 +72,7 @@ footer .copyright {
   float: left;
   margin-top: 200px;
   margin-left: 5%;
+  width: 30%;
 }
 
 .about-name {
@@ -79,9 +80,10 @@ footer .copyright {
 }
 
 .about {
-  font-family: NTR;
+  font-family: Rubik;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
+  display: inline-block;
 }
 
 .typewriter {
@@ -91,17 +93,22 @@ footer .copyright {
   margin: 0 auto;
   float: left;
   letter-spacing: 0.15em;
-  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end 5;
+  animation: typing 3.5s steps(1, end), blink-caret 0.75s step-end infinite;
+}
+
+/*.wrap { 
+    border-right: 0.08em solid crimson; 
+    animation: blink-caret 0.75s step-start infinite;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
   }
-  to {
-    width: 100%;
-  }
-}
 
 @keyframes blink-caret {
   from,
@@ -111,7 +118,7 @@ footer .copyright {
   50% {
     border-color: crimson;
   }
-}
+}*/
 
 .card-container {
   position: relative;
