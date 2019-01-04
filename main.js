@@ -93,11 +93,4 @@ window.onload = function() {
       console.log(period);
     }
   }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML += ".typewrite > .wrap { border-right: 0.08em solid crimson; animation: blink-caret 0.75s step-start infinite; }";
-  css.innerHTML += "@keyframes blink-caret { from, to {border-color: transparent;} 50% {border-color: crimson;} }";
-  document.body.appendChild(css);
-  console.log(css);
 };

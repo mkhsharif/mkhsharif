@@ -86,40 +86,19 @@ footer .copyright {
   display: inline-block;
 }
 
-.typewriter {
-  overflow: hidden;
-  border-right: 0.15em solid crimson;
-  white-space: nowrap;
-  margin: 0 auto;
-  float: left;
-  letter-spacing: 0.15em;
-  animation: typing 3.5s steps(1, end), blink-caret 0.75s step-end infinite;
-}
-
-/*.wrap { 
+.wrap {
     border-right: 0.08em solid crimson; 
     animation: blink-caret 0.75s step-start infinite;
 }
 
-@keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: crimson;
-  }
-}*/
-
+@keyframes blink-caret { 
+    from, to {
+        border-color: transparent;
+    } 
+    50% {
+        border-color: crimson;
+    } 
+}
 .card-container {
   position: relative;
   float: right;
