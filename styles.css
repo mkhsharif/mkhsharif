@@ -104,7 +104,6 @@ footer .copyright {
   position: relative;
   float: right;
   margin-top: 5%;
-  margin-right: 5%;
   max-width: 50%;
 }
 
@@ -116,6 +115,7 @@ footer .copyright {
   margin-bottom: 5%;
   max-width: 100%;
   display: block;
+  position: relative;
 }
 
 .card .card-image {
@@ -123,7 +123,6 @@ footer .copyright {
   height: 28em;
   width: 35em;
   max-width: 100%;
-  max-heigh: 100%;
 }
 
 .card .card-discription {
@@ -183,8 +182,6 @@ p {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   /*overflow: hidden;*/
 }
 
@@ -196,17 +193,13 @@ li {
   text-decoration: none;
 }
 
-/*body {
-  background-color: whitesmoke;
-  margin: 0;
-  padding: 0;
-}*/
-
 .cards-anim {
   position: relative;
   animation-name: cards;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
+  padding: 0;
+  margin: 5%;
 }
 
 @-webkit-keyframes cards {
@@ -236,8 +229,23 @@ li {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .about-container {
-    float: top;
+    float: none;
+    padding-bottom: 10%;
+    max-width: 100%;
+    position: relative;
+    margin-top: 30%;
+
+  }
+  
+  .card-container {
+    float: none;
+    max-width: 100%;
+  }
+
+  .card {
+    box-shadow: 0px 5px 14px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
   }
 }

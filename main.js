@@ -74,8 +74,8 @@ TxtType.prototype.tick = function() {
     delta = 500;
   }
 
-  console.log(this.count);
-  if (this.count !== 96) {
+  //console.log(this.count);
+  if (this.txt !== fullTxt) {
     setTimeout(function() {
       that.tick();
     }, delta);
@@ -90,7 +90,6 @@ window.onload = function() {
     var period = elements[i].getAttribute("data-period");
     if (toRotate) {
       new TxtType(elements[i], JSON.parse(toRotate), period);
-      console.log(period);
     }
   }
 };
