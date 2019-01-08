@@ -1,9 +1,9 @@
-document
+/*document
   .getElementById("selector")
   .addEventListener("mouseover", open.bind(null, "menu"));
 document
   .getElementById("selector")
-  .addEventListener("mouseout", close.bind(null, "menu"));
+  .addEventListener("mouseout", close.bind(null, "menu"));*/
 document.getElementById("select1").addEventListener("click", updateDropDown);
 document.getElementById("select2").addEventListener("click", updateDropDown);
 
