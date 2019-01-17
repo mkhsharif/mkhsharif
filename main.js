@@ -1,25 +1,29 @@
-/*document
-  .getElementById("selector")
-  .addEventListener("mouseover", open.bind(null, "menu"));
+var caret = document.getElementById("caret");
 document
   .getElementById("selector")
-  .addEventListener("mouseout", close.bind(null, "menu"));*/
+  .addEventListener("click", open.bind(null, "menu"));
+/*document.getElementsByTagName("BODY")[0].addEventListener("click", () => {
+  close.bind(null, "menu");
+  caret.classList.remove("caret-rotate");
+});*/
 document.getElementById("select1").addEventListener("click", updateDropDown);
 document.getElementById("select2").addEventListener("click", updateDropDown);
 
 function open(id) {
-  var element = document.getElementById(id);
-  if (element.classList.contains("closed")) {
-    element.classList.remove("closed");
-    element.classList.add("open");
+  var selector = document.getElementById(id);
+  if (selector.classList.contains("closed")) {
+    selector.classList.remove("closed");
+    selector.classList.add("open");
+    caret.classList.add("caret-rotate");
   }
 }
 
 function close(id) {
-  var element = document.getElementById(id);
-  if (element.classList.contains("open")) {
-    element.classList.remove("open");
-    element.classList.add("closed");
+  var selector = document.getElementById(id);
+  if (selector.classList.contains("open")) {
+    selector.classList.remove("open");
+    selector.classList.add("closed");
+    caret.classList.remove("caret-rotate");
   }
 }
 
@@ -31,6 +35,7 @@ function updateDropDown() {
   close("menu");
   close(top.toLowerCase());
   open(selected.toLowerCase());
+  caret.classList.remove("caret-rotate");
 }
 
 var TxtType = function(el, toRotate, period) {
@@ -41,7 +46,7 @@ var TxtType = function(el, toRotate, period) {
   this.txt = "";
   this.tick();
   this.isDeleting = false;
-  this.count = 0;      // set to max number of iterations
+  this.count = 0; // set to max number of iterations
 };
 
 // TYPE INTRO
