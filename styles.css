@@ -169,8 +169,9 @@ footer .copyright {
   z-index: 100;
   font-family: "Quicksand", sans-serif;
   text-align: center;
-  float: right;
-  margin-top: 65px;
+  position: absolute;
+  margin-top: 23px;
+  margin-right: 0px;
 }
 
 .caret-rotate {

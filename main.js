@@ -2,28 +2,37 @@ var caret = document.getElementById("caret");
 document
   .getElementById("selector")
   .addEventListener("click", open.bind(null, "menu"));
-/*document.getElementsByTagName("BODY")[0].addEventListener("click", () => {
-  close.bind(null, "menu");
+
+document.getElementsByTagName("BODY")[0].addEventListener("click", () => {
+  close("menu");
   caret.classList.remove("caret-rotate");
-});*/
-document.getElementById("select1").addEventListener("click", updateDropDown);
-document.getElementById("select2").addEventListener("click", updateDropDown);
+});
+document
+  .getElementById("select1")
+  .addEventListener("click", updateDropDown, false);
+document
+  .getElementById("select2")
+  .addEventListener("click", updateDropDown, false);
 
 function open(id) {
   var selector = document.getElementById(id);
+  console.log("Open " + id);
   if (selector.classList.contains("closed")) {
     selector.classList.remove("closed");
     selector.classList.add("open");
     caret.classList.add("caret-rotate");
+    event.stopPropagation(); // prevent event bubbling
   }
 }
 
 function close(id) {
+  console.log("Close " + id);
   var selector = document.getElementById(id);
   if (selector.classList.contains("open")) {
     selector.classList.remove("open");
     selector.classList.add("closed");
     caret.classList.remove("caret-rotate");
+    event.stopPropagation();
   }
 }
 
