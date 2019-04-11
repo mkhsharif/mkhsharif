@@ -258,7 +258,7 @@ li {
 @media screen and (max-width: 800px) {
   .about-container {
     float: none;
-    padding-bottom: 10%;
+    padding-bottom: 25%;
     max-width: 100%;
     position: relative;
     margin-right: 5%;
@@ -282,6 +282,7 @@ li {
       .about-container {
         padding: 30px;
         margin-top: 70px;
+        padding-bottom: 10%;
       }
 
       .card-container {
