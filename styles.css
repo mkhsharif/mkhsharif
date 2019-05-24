@@ -11,7 +11,6 @@ body {
   position: relative;
   overflow: hidden;
   display: block;
-  padding-bottom: 100px;
   max-width: 100%;
 }
 
@@ -47,7 +46,7 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 100px;
@@ -71,6 +70,7 @@ footer .copyright {
   margin-top: 200px;
   margin-left: 5%;
   max-width: 30%;
+  padding-bottom: 300px;
 }
 
 .about-avi {
@@ -85,7 +85,7 @@ footer .copyright {
   margin-left: 30px;
 }
 
-.about-icons {
+.about-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -93,12 +93,12 @@ footer .copyright {
   margin-top: 10px;
 }
 
-.about-icons a {
+.about-links a {
   color: black;
   margin: 10px;
 }
 
-.about-icons a:hover {
+.about-links a:hover {
   color: crimson;
 }
 
@@ -107,6 +107,28 @@ footer .copyright {
   font-size: 20px;
   font-weight: 500;
   display: inline-block;
+}
+
+.about-icons-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.about-icon {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.about-icon i:first-of-type {
+  padding-left: 25px;
+}
+
+.about-icon p {
+  font-size: 14px;
+  color: #5f5f5f;
+  text-align: center;
+
+  
 }
 
 .wrap {
@@ -255,7 +277,7 @@ li {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .about-container {
     float: none;
     padding-bottom: 25%;
